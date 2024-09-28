@@ -1,0 +1,19 @@
+<configuration>
+
+    <include resource="com/copyright/rup/common/logging/logback-standard.xml" />
+
+    <appender name="RP" class="com.epam.reportportal.logback.appender.ReportPortalAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%t] %-5level - %msg%n</pattern>
+            <pattern>[%t] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- STANDARD-PATTERN: Declare logger(s) for the application. -->
+    <logger name="com.copyright.rup.qa.automation.pubintel" level="INFO" />
+    <root level="INFO">
+        <appender-ref ref="RUP-CONSOLE" />
+        <appender-ref ref="RP"/>
+    </root>
+</configuration>
+
