@@ -1,7 +1,7 @@
 **RP E2E tests** (qa-report-portal)
 -----
 
-This project contains End-To-End tests for [RP project](https://github.com/CopyrightClearanceCenter/publisher-intelligence).
+This project contains End-To-End tests for Report Portal.
 
 They use JBehave + Selenide.
 
@@ -12,10 +12,6 @@ By convention, meta-tags are used to indicate corresponding user-story under tes
     Scenario: ...
 
 Scenarios are made of **steps** following given-when-then convention and corresponding predicates.<br/>
-
-Steps are documented [here](pubintel/README.md).
-
-Use `gradlew genDoc` command to generate steps documentation after adding an implementation of new steps.
 
 # Option
 
